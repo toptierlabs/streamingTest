@@ -1,0 +1,11 @@
+Se debe agregar la referencia a los siguientes framework:
+  -MediaPlayer
+  -AudioToolBox
+  -CFNetwork
+  -QuartzCore
+
+En streamingTestViewController se encuentran definidos los metodos para le manejo del slider asi 
+como el cotrol de la reproduccion.
+
+En AudioStreamer se encuentra todo lo referente al manejo del streaming, esta clase hay que copiarla al proyecto en 
+donde se quiera utilizar streaming.
