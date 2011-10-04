@@ -23,6 +23,16 @@
 		9BEBBCBD1439E02100304B16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCBB1439E02100304B16 /* InfoPlist.strings */; };
 		9BEBBCBF1439E02100304B16 /* streamingTestTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCBE1439E02100304B16 /* streamingTestTests.h */; };
 		9BEBBCC11439E02100304B16 /* streamingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBBCC01439E02100304B16 /* streamingTestTests.m */; };
+		9BEBBCD5143A2C7E00304B16 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBBCD4143A2C7E00304B16 /* AudioStreamer.m */; };
+		9BEBBCD7143A2F2B00304B16 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEBBCD6143A2F2B00304B16 /* MediaPlayer.framework */; };
+		9BEBBCD9143A2F4600304B16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEBBCD8143A2F4600304B16 /* AudioToolbox.framework */; };
+		9BEBBCDB143A2F5300304B16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEBBCDA143A2F5300304B16 /* CFNetwork.framework */; };
+		9BEBBCDD143A2F6800304B16 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEBBCDC143A2F6800304B16 /* QuartzCore.framework */; };
+		9BEBBCDF143A4BD300304B16 /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCDE143A4BD300304B16 /* playbutton.png */; };
+		9BEBBCE1143A4BDD00304B16 /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCE0143A4BDD00304B16 /* stopbutton.png */; };
+		9BEBBCE3143A4BE700304B16 /* loadingbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCE2143A4BE700304B16 /* loadingbutton.png */; };
+		9BEBBCE5143A4BEF00304B16 /* pausebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBCE4143A4BEF00304B16 /* pausebutton.png */; };
+		9BEBBD20143A4CEF00304B16 /* StreamConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BEBBD1F143A4CEF00304B16 /* StreamConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +66,17 @@
 		9BEBBCBC1439E02100304B16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BEBBCBE1439E02100304B16 /* streamingTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = streamingTestTests.h; sourceTree = "<group>"; };
 		9BEBBCC01439E02100304B16 /* streamingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = streamingTestTests.m; sourceTree = "<group>"; };
+		9BEBBCD3143A2C6F00304B16 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		9BEBBCD4143A2C7E00304B16 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		9BEBBCD6143A2F2B00304B16 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9BEBBCD8143A2F4600304B16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9BEBBCDA143A2F5300304B16 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9BEBBCDC143A2F6800304B16 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9BEBBCDE143A4BD300304B16 /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		9BEBBCE0143A4BDD00304B16 /* stopbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopbutton.png; sourceTree = "<group>"; };
+		9BEBBCE2143A4BE700304B16 /* loadingbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingbutton.png; sourceTree = "<group>"; };
+		9BEBBCE4143A4BEF00304B16 /* pausebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebutton.png; sourceTree = "<group>"; };
+		9BEBBD1F143A4CEF00304B16 /* StreamConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StreamConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BEBBCDD143A2F6800304B16 /* QuartzCore.framework in Frameworks */,
+				9BEBBCDB143A2F5300304B16 /* CFNetwork.framework in Frameworks */,
+				9BEBBCD9143A2F4600304B16 /* AudioToolbox.framework in Frameworks */,
+				9BEBBCD7143A2F2B00304B16 /* MediaPlayer.framework in Frameworks */,
 				9BEBBC911439E02100304B16 /* UIKit.framework in Frameworks */,
 				9BEBBC931439E02100304B16 /* Foundation.framework in Frameworks */,
 				9BEBBC951439E02100304B16 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9BEBBC961439E02100304B16 /* streamingTest */,
+				9BEBBCD2143A2C2C00304B16 /* Resources */,
 				9BEBBCB81439E02100304B16 /* streamingTestTests */,
 				9BEBBC8F1439E02100304B16 /* Frameworks */,
 				9BEBBC8D1439E02100304B16 /* Products */,
@@ -105,6 +131,10 @@
 		9BEBBC8F1439E02100304B16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BEBBCD6143A2F2B00304B16 /* MediaPlayer.framework */,
+				9BEBBCD8143A2F4600304B16 /* AudioToolbox.framework */,
+				9BEBBCDA143A2F5300304B16 /* CFNetwork.framework */,
+				9BEBBCDC143A2F6800304B16 /* QuartzCore.framework */,
 				9BEBBC901439E02100304B16 /* UIKit.framework */,
 				9BEBBC921439E02100304B16 /* Foundation.framework */,
 				9BEBBC941439E02100304B16 /* CoreGraphics.framework */,
@@ -116,12 +146,12 @@
 		9BEBBC961439E02100304B16 /* streamingTest */ = {
 			isa = PBXGroup;
 			children = (
+				9BEBBCD3143A2C6F00304B16 /* AudioStreamer.h */,
+				9BEBBCD4143A2C7E00304B16 /* AudioStreamer.m */,
 				9BEBBC9F1439E02100304B16 /* streamingTestAppDelegate.h */,
 				9BEBBCA01439E02100304B16 /* streamingTestAppDelegate.m */,
-				9BEBBCA21439E02100304B16 /* MainWindow.xib */,
 				9BEBBCA51439E02100304B16 /* streamingTestViewController.h */,
 				9BEBBCA61439E02100304B16 /* streamingTestViewController.m */,
-				9BEBBCA81439E02100304B16 /* streamingTestViewController.xib */,
 				9BEBBC971439E02100304B16 /* Supporting Files */,
 			);
 			path = streamingTest;
@@ -155,6 +185,20 @@
 				9BEBBCBB1439E02100304B16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BEBBCD2143A2C2C00304B16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BEBBCE4143A4BEF00304B16 /* pausebutton.png */,
+				9BEBBCE2143A4BE700304B16 /* loadingbutton.png */,
+				9BEBBCE0143A4BDD00304B16 /* stopbutton.png */,
+				9BEBBCDE143A4BD300304B16 /* playbutton.png */,
+				9BEBBCA21439E02100304B16 /* MainWindow.xib */,
+				9BEBBCA81439E02100304B16 /* streamingTestViewController.xib */,
+				9BEBBD1F143A4CEF00304B16 /* StreamConfig.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +271,11 @@
 				9BEBBC9B1439E02100304B16 /* InfoPlist.strings in Resources */,
 				9BEBBCA41439E02100304B16 /* MainWindow.xib in Resources */,
 				9BEBBCAA1439E02100304B16 /* streamingTestViewController.xib in Resources */,
+				9BEBBCDF143A4BD300304B16 /* playbutton.png in Resources */,
+				9BEBBCE1143A4BDD00304B16 /* stopbutton.png in Resources */,
+				9BEBBCE3143A4BE700304B16 /* loadingbutton.png in Resources */,
+				9BEBBCE5143A4BEF00304B16 /* pausebutton.png in Resources */,
+				9BEBBD20143A4CEF00304B16 /* StreamConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +314,7 @@
 				9BEBBC9D1439E02100304B16 /* main.m in Sources */,
 				9BEBBCA11439E02100304B16 /* streamingTestAppDelegate.m in Sources */,
 				9BEBBCA71439E02100304B16 /* streamingTestViewController.m in Sources */,
+				9BEBBCD5143A2C7E00304B16 /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +351,7 @@
 				9BEBBCA31439E02100304B16 /* en */,
 			);
 			name = MainWindow.xib;
+			path = streamingTest;
 			sourceTree = "<group>";
 		};
 		9BEBBCA81439E02100304B16 /* streamingTestViewController.xib */ = {
@@ -309,6 +360,7 @@
 				9BEBBCA91439E02100304B16 /* en */,
 			);
 			name = streamingTestViewController.xib;
+			path = streamingTest;
 			sourceTree = "<group>";
 		};
 		9BEBBCBB1439E02100304B16 /* InfoPlist.strings */ = {
